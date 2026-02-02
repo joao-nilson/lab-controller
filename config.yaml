@@ -1,0 +1,29 @@
+# config.yaml
+thresholds:
+  temperature_critical: 85
+  temperature_warning: 75
+  battery_low: 20
+  battery_critical: 10
+  load_high: 80
+
+intervals:
+  assessment_interval: 60  # seconds
+  emergency_check: 10      # seconds for emergency mode
+
+pbs:
+  bin_path: "/opt/pbs/bin"
+  server: ""  # leave empty for default
+
+prometheus:
+  url: "http://localhost:9090"
+  timeout: 5
+
+ups_metrics:
+  utility_power: 'ups_utility_power'
+  battery_voltage: 'ups_battery_voltage'
+  load_percentage: 'ups_load_percentage'
+  temperature: 'ups_temperature_celsius'
+
+actions:
+  max_jobs_to_suspend: 3
+  fcfs_protection_minutes: 60
