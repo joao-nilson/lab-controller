@@ -7,6 +7,7 @@ from typing import Dict, List, Optional
 from pbs_manager import PBSManager
 from prometheus_manager import PrometheusManager
 from ups_manager import UpsManager
+from hd_manager import Disk
 
 class LabController:
     def __init__(self, config_path: str = "config.yaml"):

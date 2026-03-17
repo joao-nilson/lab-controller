@@ -84,6 +84,5 @@ class PBSManager:
         return False
     
     def set_node_offline(self, node_name: str) -> bool:
-        """Set a PBS node to offline"""
         #implement logic
         return False
